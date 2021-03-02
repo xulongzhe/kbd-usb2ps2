@@ -13,7 +13,7 @@
 // typematic rate: the smaller number, the faster rate
 #define KEY_REPEAT_INTERVAL 280
 // typematic delay: the smaller number, the less delay
-#define KEY_REPEAT_DELAY 8000
+#define KEY_REPEAT_DELAY 4000
 
 // PS/2 Key type
 // | hex  | describe    |
@@ -193,7 +193,18 @@ void InitHidKeyMapPs2() {
   hid2ps2[0x55] = {0x7C, PS2_KEY_TYPE_NORMAL};  // Keypad *
   hid2ps2[0x56] = {0x7B, PS2_KEY_TYPE_NORMAL};  // Keypad -
   hid2ps2[0x57] = {0x79, PS2_KEY_TYPE_NORMAL};  // Keypad +
-
+  
+  hid2ps2[0x59] = {0x69, PS2_KEY_TYPE_NORMAL};  // Keypad 1
+  hid2ps2[0x5A] = {0x72, PS2_KEY_TYPE_NORMAL};  // Keypad 2
+  hid2ps2[0x5B] = {0x7A, PS2_KEY_TYPE_NORMAL};  // Keypad 3
+  hid2ps2[0x5C] = {0x6B, PS2_KEY_TYPE_NORMAL};  // Keypad 4
+  hid2ps2[0x5D] = {0x73, PS2_KEY_TYPE_NORMAL};  // Keypad 5
+  hid2ps2[0x5E] = {0x74, PS2_KEY_TYPE_NORMAL};  // Keypad 6
+  hid2ps2[0x5F] = {0x6C, PS2_KEY_TYPE_NORMAL};  // Keypad 7
+  hid2ps2[0x60] = {0x75, PS2_KEY_TYPE_NORMAL};  // Keypad 8
+  hid2ps2[0x61] = {0x7D, PS2_KEY_TYPE_NORMAL};  // Keypad 9
+  hid2ps2[0x62] = {0x70, PS2_KEY_TYPE_NORMAL};  // Keypad 0
+  
   hid2ps2[0x63] = {0x71, PS2_KEY_TYPE_NORMAL};  // Keypad . Delete
   hid2ps2[0x67] = {0x0F, PS2_KEY_TYPE_NORMAL};  // Keypad =
 
