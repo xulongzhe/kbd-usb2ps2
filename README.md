@@ -39,7 +39,7 @@ USB Host Shield V2.0 好像[不支持自带 Hub 口的键盘](https://github.com
 
 ## TODO
 
-* [ ] 支持 Num Lock
+* [ ] 极少情况下出现CAPS LOCK键反转
 * [x] BIOS 启动时识别为 PS/2 键盘设备
 
 ## Reference
