@@ -12,7 +12,7 @@
 
 * [Arduino Uno Rev3](https://store.arduino.cc/usa/arduino-uno-rev3)
 * [USB Host Shield V2.0](https://store.arduino.cc/usa/arduino-usb-host-shield)
-* PS/2 线（可以从旧的 PS/2 键盘上拆下来）
+* PS/2 线（可以从旧的 PS/2 键盘上拆下来），需注意线序。
 
 ## 如何使用
 
@@ -20,7 +20,7 @@
 2. 在 Arduino IDE 中安装 [USB Host Shield Library 2.0](https://github.com/felis/USB_Host_Shield_2.0)
 3. 将这个项目 (kbd-usb2ps2.ino) 写入 Arduino Uno Rev3
 4. 将 USB Host Shield V2.0 组装在 Arduino Uno Rev3 上
-5. 将 PS/2 的 **数据线** 和 **时钟线** 分别插在 Arduino 的 (**4**, **2**) 上
+5. 将 PS/2 的 **数据线** 和 **时钟线** 分别插在 Arduino 的 (**4**, **2**) 上,5V与接地也要接上
 
 :warning: 注意: 在电脑启动前，你就应该先把 PS/2 接口插在电脑上，因为 PS/2 接口不支持 [热插拔](https://en.wikipedia.org/wiki/PS/2_port#Hotplugging).
 
@@ -39,8 +39,9 @@ USB Host Shield V2.0 好像[不支持自带 Hub 口的键盘](https://github.com
 
 ## TODO
 
-* [ ] 极少情况下出现CAPS LOCK键反转
+* [x] 支持 Num Lock
 * [x] BIOS 启动时识别为 PS/2 键盘设备
+* [ ] 极少情况下出现CAPS LOCK键反转
 
 ## Reference
 
