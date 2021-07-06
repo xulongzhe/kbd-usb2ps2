@@ -491,8 +491,6 @@ void setup() {
 
   if (Usb.Init() == -1) Serial.println("OSC did not start.");
 
-  delay(200);
-
   HidKeyboard.SetReportParser(0, &Prs);
 }
 
